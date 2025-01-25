@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for readability */
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(45deg, #bb86fc, #3700b3); /* Vibrant gradient */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+form input {
+  padding: 12px;
+  font-size: 1rem;
+  width: 60%;
+  border: 2px solid #bb86fc;
+  border-radius: 8px;
+  background: #1f1f1f; /* Dark input background */
+  color: #e0e0e0;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+  border-color: #03dac6; /* Aqua border on focus */
+  outline: none;
+  box-shadow: 0 0 8px #03dac6;
+}
+
+form select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #bb86fc;
+  border-radius: 8px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  transition: border-color 0.3s;
+}
+
+form select:focus {
+  border-color: #03dac6;
+  outline: none;
+}
+
+form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #121212; /* Dark text for contrast */
+  background: #bb86fc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #1f1f1f; /* Dark bar background */
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(45deg, #03dac6, #018786); /* Aqua gradient */
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+#progressText {
+  text-align: center;
+  margin: 10px 0;
+  color: #bb86fc;
+  font-weight: bold;
+}
+
+/* Bucket List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #1f1f1f; /* Dark list item background */
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+ul li .wish-text {
+  font-size: 1rem;
+  flex: 1;
+  margin-right: 10px;
+  color: #e0e0e0;
+}
+
+ul li .wish-text.completed {
+  text-decoration: line-through;
+  color: #757575; /* Muted color for completed items */
+}
+
+ul li button {
+  background: none;
+  border: 2px solid #bb86fc;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #bb86fc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ul li button:hover {
+  background-color: #bb86fc;
+  color: #121212; /* Text changes to black on hover */
+}
+
+ul li button.delete-btn {
+  border-color: #cf6679;
+  color: #cf6679;
+}
+
+ul li button.delete-btn:hover {
+  background-color: #cf6679;
+  color: #121212;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #3700b3;
+  color: #e0e0e0;
+}
+h2{
+  align-content: center;
+}
